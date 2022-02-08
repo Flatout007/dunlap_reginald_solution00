@@ -79,7 +79,6 @@ function bestHand(p, n, deck) { // O(n) with n being the size of deck
     let playerHands = {};
     let card = 0, numberOfCardsDealt = 0, i = 0;
 
-   
     while(numberOfCardsDealt !== n*n) { 
         // deal each player a single card
        // if "this.deck.length" cards are dealt: randomize the next cards and deal them
