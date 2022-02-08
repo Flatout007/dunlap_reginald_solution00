@@ -89,10 +89,10 @@ function bestHand(p, n, deck) { // O(n + j) with n being the size of deck and j 
         card++; i++;
         numberOfCardsDealt += 1;
         if(i >= p) i = 0; 
+        card = Math.floor(Math.random() * deck.length)
         if(numberOfCardsDealt === deck.length - 1) {
              let dealer = new Dealer(deck);
              deck = dealer.shuffle();
-             card = 0;
         } 
     }
  
@@ -130,7 +130,7 @@ function bestSum(hands) {
 /* tests -------------------*/
 let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 let dealer = new Dealer(deck);
-bestHand(5, 5, dealer.shuffle());
+bestHand(5, 100, dealer.shuffle());
 
 // let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 // let dealer = new Dealer(deck);
