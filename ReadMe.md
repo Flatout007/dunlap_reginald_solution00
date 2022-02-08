@@ -10,7 +10,7 @@ Algorithm:
 - After the array is shuffled initially, Each player is dealt a single card per iteration,  
 shuffling again if ```deck.length-1``` cards are dealt, until ```p*n``` cards are dealt.
 
-- The max sum is then calculated by ```bestSum()``` and returned as an array along with the current hand.
+- The max sum is then calculated by ```bestSum()``` and returned as an array along with the current ```hand```.
 
 - Finally, the system prints ```"the best hand is ${h} with a sum of ${y}"```;
 

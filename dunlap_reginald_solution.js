@@ -112,7 +112,7 @@ function sum(arr) {
 }
 /**
  * @param {{}[]} hands 
- * @returns {number[]} 
+ * @returns {Array[]} 
  */
 function bestSum(hands) {
     let max = -Infinity;
