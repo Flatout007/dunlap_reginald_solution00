@@ -75,6 +75,7 @@ for your application and send your results to brenda.murphy@f8-federal.com
  * @param {number[]} deck 
  */
 function bestHand(p, n, deck) { // O(n) with n being the size of deck
+    if(n <= 0 || p <= 0 || deck <= 0) return 0;
     let h, y;
     let playerHands = {};
     let card = 0, numberOfCardsDealt = 0, i = 0;
