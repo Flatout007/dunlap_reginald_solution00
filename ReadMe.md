@@ -6,10 +6,9 @@ prints ```"the best hand is ${h} with a sum of ${y}"```.
 Algorithm:
 
 - Dealer is a class that is used to shuffle the deck of cards via ```this.deck.shuffle()```.
-Each player gets a single card per iteration until n*n cards are dealt.
 
-- After the array is shuffled initially, the dealer deals all cards, 
-shuffling again if ```deck.length-1``` cards are dealt, Dealing remaining cards.
+- After the array is shuffled initially, Each player is dealt a single card per iteration,  
+shuffling again if ```deck.length-1``` cards are dealt, until n*n cards are dealt.
 
 - The max sum is then calculated by ```bestSum()``` and returned as an array along with the current hand.
 
