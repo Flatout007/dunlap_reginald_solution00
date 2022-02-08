@@ -81,7 +81,6 @@ function bestHand(p, n, deck) { // O(n) with n being the size of deck
     let playerHands = {};
     let card = 0, numberOfCardsDealt = 0, i = 0;
 
-    debugger;
     while(numberOfCardsDealt !== n*p) { 
         // deal each player a single card
        // if "this.deck.length" cards are dealt: randomize the next cards and deal them
@@ -130,7 +129,11 @@ function bestSum(hands) {
 /* tests -------------------*/
 let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 let dealer = new Dealer(deck);
-bestHand(100, 5, dealer.shuffle());
+bestHand(5, 5, dealer.shuffle());
+
+// let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
+// let dealer = new Dealer(deck);
+// bestHand(100, 5, dealer.shuffle());
 
 // let deck = [2, 9, 10, 'J', 'Q', 'K', 'A'];
 // let dealer = new Dealer(deck);
