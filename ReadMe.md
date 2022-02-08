@@ -5,7 +5,8 @@ prints ```"the best hand is ${h} with a sum of ${y}"```.
 
 Algorithim:
 
-- Dealer is a class that is used to shuffle the deck/array of cards.
+- Dealer is a class that is used to shuffle the deck of cards via ```this.deck.shuffle()```.
+each player gets a single card per iteration until n*n cards are dealt.
 
 - After the array is shuffled initailly, the dealer deals all cards, 
 shuffling again if ```deck.length-1``` cards are delt.
