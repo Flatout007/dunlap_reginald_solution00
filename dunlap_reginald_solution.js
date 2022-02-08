@@ -126,7 +126,15 @@ function bestSum(hands) {
     }
 }
 
-// test
+/* tests -------------------*/
 let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 let dealer = new Dealer(deck);
 bestHand(5, 5, dealer.shuffle());
+
+// let deck = [2, 9, 10, 'J', 'Q', 'K', 'A'];
+// let dealer = new Dealer(deck);
+// bestHand(5, 5, dealer.shuffle());
+
+// let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J'];
+// let dealer = new Dealer(deck);
+// bestHand(5, 5, dealer.shuffle());
