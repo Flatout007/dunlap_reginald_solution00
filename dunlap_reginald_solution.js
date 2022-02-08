@@ -1,4 +1,3 @@
-
 /*
 Given a deck of cards, we have to deal a hand containing a certain number of cards. 
 Cards can be dealt from the top of the deck as well as from the bottom. 
@@ -86,9 +85,10 @@ function bestHand(p, n, deck) { // O(n + j) with n being the size of deck and j 
        // if "this.deck.length" cards are dealt: randomize the next cards and deal them
         if(!playerHands[i]) playerHands[i] = [deck[card]];
         else playerHands[i].push(deck[card]);
-        card++; i++;
+        i++; card++;
         numberOfCardsDealt += 1;
         if(i >= p) i = 0; 
+        if(card === deck.length) card = 0;
         card = Math.floor(Math.random() * deck.length)
         if(numberOfCardsDealt === deck.length - 1) {
              let dealer = new Dealer(deck);
@@ -130,7 +130,7 @@ function bestSum(hands) {
 /* tests -------------------*/
 let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 let dealer = new Dealer(deck);
-bestHand(5, 100, dealer.shuffle());
+bestHand(5, 5, dealer.shuffle());
 
 // let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 // let dealer = new Dealer(deck);
