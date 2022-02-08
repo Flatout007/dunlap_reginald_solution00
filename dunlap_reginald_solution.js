@@ -33,7 +33,7 @@ for your application and send your results to brenda.murphy@f8-federal.com
  */
 /**
  * output: 
- * print "the best hand is ```h:number``` with a sum of ```y:number``` "
+ * print "the best hand is ```h:number[]``` with a sum of ```y:number``` "
  */
 /**
  * Notes:
