@@ -8,7 +8,7 @@ Algorithm:
 - Dealer is a class that is used to shuffle the deck of cards via ```this.deck.shuffle()```.
 
 - After the array is shuffled initially, Each player is dealt a single card per iteration,  
-shuffling again if ```deck.length-1``` cards are dealt, until p*n cards are dealt.
+shuffling again if ```deck.length-1``` cards are dealt, until ```p*n``` cards are dealt.
 
 - The max sum is then calculated by ```bestSum()``` and returned as an array along with the current hand.
 
