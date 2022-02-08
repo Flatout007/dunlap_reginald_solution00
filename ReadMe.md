@@ -1,6 +1,6 @@
 Hello, 
 
-This solution takes in ```bestHand(people, n, random deck)```, deals `n` cards to `n` amount of people, and 
+This solution takes in ```bestHand(people, n, random deck)```, deals `n` cards to `p` people, and 
 prints ```"the best hand is ${h} with a sum of ${y}"```.
 
 Algorithm:
